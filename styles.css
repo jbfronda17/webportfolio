@@ -18,6 +18,12 @@ body {
 	height: 10vh;
 }
 
+.nav-link {
+	margin: 7px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
 .section_container {
 	height: 100vh;
 }
