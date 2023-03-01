@@ -16,7 +16,23 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+		<!-- AOS CSS -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 		<title>Web Portfolio - John Bryan Fronda</title>
+
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).scroll(function () {
+				var $nav = $(".navbar");
+				var $navBrand = $(".navbar-brand");
+				var $navLinks = $(".nav-link");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				$navBrand.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+				$navLinks.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		</script>
 	</head>
 	<body>
 		<div class="main_container">
@@ -35,11 +51,21 @@
 							</button>
 							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 								<div id="nav-links" class="navbar-nav ms-auto">
-									<a href="#" class="nav-link home active" aria-current="page">Home</a>
-									<a href="#about" class="nav-link about">About</a>
-									<a href="#skills" class="nav-link skills">Skills</a>
-									<a href="#projects" class="nav-link projects">Projects</a>
-									<a href="#contact" class="nav-link contact">Contact</a>
+									<div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+										<a href="#" class="nav-link home active" aria-current="page">Home</a>
+									</div>
+									<div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
+										<a href="#about" class="nav-link about">About</a>
+									</div>
+									<div data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+										<a href="#skills" class="nav-link skills">Skills</a>
+									</div>
+									<div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">
+										<a href="#projects" class="nav-link projects">Projects</a>
+									</div>
+									<div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
+										<a href="#contact" class="nav-link contact">Contact</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -49,12 +75,12 @@
 					<!-- Introduction start -->
 					<div id="introduction_container" class="container section_content d-flex align-items-center justify-content-center col-9 p-0">
 						<div id="introduction_content" class="row col-12">
-							<div class="left col-6 d-flex flex-column justify-content-center p-0">
+							<div data-aos="fade-down" data-aos-duration="2000" class="left col-6 d-flex flex-column justify-content-center p-0">
 								<p class="text">Hello there,</p>
 								<h1>I'm John Bryan Fronda</h1>
 								<p class="text">a Full-stack Web Developer/Software Engineer</p>
 							</div>
-							<div class="right col-6 p-0">
+							<div data-aos="fade-up" data-aos-duration="2000" class="right col-6 p-0">
 								<img src="./images/profile.png" class="img-fluid rounded-circle">
 							</div>
 						</div>
@@ -94,7 +120,17 @@
 			<!-- Contact end -->
 
 		</div>
+		<script type="text/javascript" src="./index.js"></script>
+
 		<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+		<!-- AOS JS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+		  AOS.init({
+		  	once: true,
+		  });
+		</script>
 	</body>
 </html>
