@@ -21,6 +21,18 @@ body {
   background: #212529;
 }
 
+#introduction_heading {
+	font-weight: 800;
+}
+
+.highlight {
+	color: #fe5b02;
+}
+
+#profile_image {
+	border: 15px solid white;
+}
+
 .navbar {
 	background-color: transparent;
 	transition: all 0.5s linear;
@@ -78,6 +90,7 @@ body {
 
 .section_container.dark {
 	background-color: #212529;
+	color: white;
 }
 
 .section_header {
@@ -94,6 +107,5 @@ body {
 }
 
 #introduction_container {
-	color: white;
 	height: 90vh;
 }
