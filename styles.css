@@ -109,3 +109,58 @@ body {
 #introduction_container {
 	height: 90vh;
 }
+
+.message1 {
+  animation: message1;
+}
+
+.message2 {
+  animation: message2;
+}
+
+.message1, .message2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  animation-duration: 14s;
+  animation-timing-function: steps(17, end);
+  animation-iteration-count: infinite;
+}
+
+.message1::after, .message2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes message1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 9.8em;
+  }
+}
+
+@keyframes message2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 9em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
