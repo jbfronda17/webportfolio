@@ -4,3 +4,25 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.section_container {
+	height: 100vh;
+}
+
+#home_header {
+	height: 10vh;
+}
+
+.section_header {
+	color: transparent;
+	height: 8vh;
+}
