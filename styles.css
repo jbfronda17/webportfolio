@@ -14,15 +14,27 @@ body {
   background-color: #fff;
 }
 
+.navbar {
+	height: 10vh;
+}
+
 .section_container {
 	height: 100vh;
+}
+
+.section_header {
+	color: transparent;
+	height: 8vh;
 }
 
 #home_header {
 	height: 10vh;
 }
 
-.section_header {
-	color: transparent;
-	height: 8vh;
+.section_content {
+	height: 92vh;
+}
+
+#introduction_container {
+	height: 90vh;
 }
