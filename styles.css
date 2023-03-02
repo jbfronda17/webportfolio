@@ -198,5 +198,15 @@ body {
 }
 
 .button_card {
-  width: 100px;
+  width: 150px;
+}
+
+.skill {
+  margin: 5px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.skill:hover {
+  background-color: white;
 }
