@@ -208,5 +208,5 @@ body {
 
 .skill:hover {
   background-color: white;
-  transform: translateY(-7px);
+  transform: translateY(-6px);
 }
