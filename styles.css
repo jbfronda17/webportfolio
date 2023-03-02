@@ -202,11 +202,11 @@ body {
 }
 
 .skill {
-  margin: 5px;
   border-radius: 15px;
   transition: all 0.5s;
 }
 
 .skill:hover {
   background-color: white;
+  transform: translateY(-7px);
 }
