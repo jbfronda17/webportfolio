@@ -170,9 +170,8 @@ body {
   }
 }
 
-.button {
-  padding: 8px 0px;
-  width: 150px;
+.btn {
+  padding: 8px 24px;
   background-color: white;
   border-color: #fe5b02;
   color: #fe5b02;
@@ -180,7 +179,7 @@ body {
   transition: all 0.3s;
 }
 
-.button:hover {
+.btn:hover {
   box-shadow: 0px 10px 10px rgba(254, 91, 2, 0.5);
   transform: translateY(-5px);
   background-color: #fe5b02;
@@ -197,10 +196,6 @@ body {
   transform: translateY(-5px);
 }
 
-.button_card {
-  width: 150px;
-}
-
 .skill {
   border-radius: 15px;
   transition: all 0.5s;
@@ -209,4 +204,28 @@ body {
 .skill:hover {
   background-color: white;
   transform: translateY(-6px);
+}
+
+#contact_content {
+  height: 82vh;
+}
+
+#messageInput {
+  resize: none;
+}
+
+#formButton.btn {
+  background-color: #fe5b02;
+  color: white;
+  box-shadow: none;
+  transform: none;
+}
+
+#formButton.btn:hover {
+  background-color: white;
+  color: #fe5b02;
+}
+
+#footer {
+  height: 10vh;
 }

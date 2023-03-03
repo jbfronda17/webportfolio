@@ -105,7 +105,9 @@
 							<div data-aos="fade-left" data-aos-duration="2000" class="col-6 d-flex flex-column justify-content-center">
 								<h1 class="section_heading mb-4">About <span class="highlight">Me</span></h1>
 								<p align="justify">Hi, I'm Bryan. I am a Full-stack (MERN stack) Web Developer. I graduated with a Bachelor's degree in Electronics Engineering, but decided to shift careers to pursue my passion in coding. Having just finished a web development program in an intensive coding bootcamp, I now have fresh experience in building responsive full stack web applications while continuously learning more technologies and improving my skills.</p>
-								<a href="./Resume_Fronda.pdf" target="_blank"><button class="button rounded-pill mt-5">Download CV</button></a>
+								<div>
+									<a href="./Resume_Fronda.pdf" target="_blank"><button class="btn rounded-pill mt-5">Download CV</button></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -206,7 +208,7 @@
 										<div class="card-body">
 											<h5 class="card-title mb-3">Web Portfolio</h5>
 											<p class="card-text mb-5">A mobile responsive web developer portfolio made using HTML, CSS, Bootstrap, and JavaScript hosted on Github</p>
-											<a href="https://github.com/jbfronda17/webportfolio" target="_blank"><button class="button button_card rounded-pill">Github</button></a>
+											<a href="https://github.com/jbfronda17/webportfolio" target="_blank"><button class="btn rounded-pill">Github</button></a>
 										</div>
 									</div>
 								</div>
@@ -216,7 +218,7 @@
 										<div class="card-body">
 											<h5 class="card-title mb-3">E-commerce API</h5>
 											<p class="card-text mb-5">An e-commerce API made using Javascript, MongoDB, Node.js, REST Architecture, Express.js, and Postman hosted on Render</p>
-											<a href=""><button class="button button_card rounded-pill">Github</button></a>
+											<a href=""><button class="btn rounded-pill">Github</button></a>
 										</div>
 									</div>
 								</div>
@@ -226,7 +228,7 @@
 										<div class="card-body">
 											<h5 class="card-title mb-3">E-commerce App</h5>
 											<p class="card-text mb-5">A single page e-commerce web application made using MERN stack (MongoDB, Express.js, React.js, Node.js) hosted on Vercel</p>
-											<a href=""><button class="button button_card rounded-pill">Github</button></a>
+											<a href=""><button class="btn rounded-pill">Github</button></a>
 										</div>
 									</div>
 								</div>
@@ -241,6 +243,50 @@
 			<section id="contact">
 				<div id="contact_container" class="container-fluid section_container dark p-0">
 					<h1 id="contact_header" class="section_header m-0">Contact</h1>
+					<div class="container section_content col-9 p-0">
+						<div id="contact_content" class="d-flex align-items-center justify-content-center">
+							<div class="row d-flex flex-column flex-md-row col-12">
+								<div data-aos="fade-right" data-aos-duration="2000" class="col-md-6">
+									<h1 class="section_heading text-center mb-3 p-0">Contact <span class="highlight">Me</span></h1>
+									<form>
+										<div class="mb-3">
+											<label for="textInput" class="form-label">Name</label>
+											<input type="text" class="form-control" id="textInput" placeholder="Enter your name" required>
+										</div>
+										<div class="mb-3">
+											<label for="emailInput" class="form-label">Email address</label>
+											<input type="email" class="form-control" id="emailInput" placeholder="Enter email" required>
+										</div>
+										<div class="mb-3">
+											<label for="messageInput" class="form-label">Your message</label>
+											<textarea class="form-control" id="messageInput" rows="5" placeholder="Enter a message" required></textarea>
+										</div>
+										<button id="formButton" type="submit" class="btn rounded-pill">Send</button>
+									</form>
+								</div>
+								<div data-aos="fade-left" data-aos-duration="2000" class="col-md-6">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61897.28204347001!2d120.7177512921072!3d14.160764935556667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd84c416c13e8b%3A0xf7a5caff1f064344!2sMagallanes%2C%20Cavite!5e0!3m2!1sen!2sph!4v1677813317602!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer -->
+						<div id="footer" class="d-flex justify-content-around align-items-center">
+							<div>
+								<i class="fa-brands fa-linkedin fa-2x me-3"></i>
+								<i class="fa-brands fa-square-gitlab fa-2x me-3"></i>
+								<i class="fa-brands fa-github fa-2x"></i>
+							</div>
+							<div>
+								<p class="m-0">frondajohnbryan@gmail.com</p>
+							</div>
+							<div>
+								<p class="m-0">John Bryan Fronda © 2023</p>
+							</div>
+						</div>
+						<!-- Footer End -->
+
+					</div>
 				</div>
 			</section>
 			<!-- Contact end -->
@@ -261,6 +307,9 @@
 		  	once: true,
 		  });
 		</script>
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/d12665450e.js" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" src="./index.js"></script>
 	</body>
