@@ -229,3 +229,7 @@ body {
 #footer {
   height: 10vh;
 }
+
+.fa-brands {
+  color: white;
+}
