@@ -3,6 +3,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+/*  outline: 1px solid red;*/
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 html {
@@ -10,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   background-color: #fff;
 }
 
@@ -29,7 +34,7 @@ body {
 	color: #fe5b02;
 }
 
-#profile_image {
+#profileImage {
 	border: 15px solid white;
 }
 
@@ -37,6 +42,10 @@ body {
 	background-color: transparent;
 	transition: all 0.5s linear;
 	height: 10vh;
+}
+
+.navbar-toggler {
+  background: #fe5b02;
 }
 
 .navbar.scrolled {
@@ -85,7 +94,7 @@ body {
 }
 
 .section_container {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .section_container.dark {
@@ -108,6 +117,61 @@ body {
 
 #introduction_container {
 	height: 90vh;
+}
+
+.message1 {
+  animation: message1;
+}
+
+.message2 {
+  animation: message2;
+}
+
+.message1, .message2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  animation-duration: 14s;
+  animation-timing-function: steps(17, end);
+  animation-iteration-count: infinite;
+}
+
+.message1::after, .message2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes message1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 9.8em;
+  }
+}
+
+@keyframes message2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+
+  60%, 90% {
+    width: 9em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .section_heading, .card-title {
@@ -232,4 +296,50 @@ body {
 
 .fa-brands {
   color: white;
+}
+
+@media (max-width: 991.98px) {
+  .text {
+    text-align: center;
+  }
+
+  .section_content, #contact_content {
+    height: auto;
+  }
+
+  #skills_section_content.section_content {
+    height: 92vh;
+  }
+
+  #contact_content {
+    min-height: 82vh;
+  }
+
+  #profileImage, #aboutImage1, .footer-content {
+    display: none;
+  }
+
+  #aboutImage2 {
+    display: initial;
+    border: 15px solid #f7963b;
+  }
+
+  #download-button, .card {
+    margin-bottom: 3rem;
+  }
+
+  #projects_heading, #contact_heading {
+    margin-top: 3rem;
+  }
+
+  .map {
+    margin-top: 2rem;
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  #aboutImage2 {
+    display: none;
+  }
 }
