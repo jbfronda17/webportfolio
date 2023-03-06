@@ -18,5 +18,16 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+const navLinks = document.querySelectorAll('.nav-link');
+const menuToggle = document.getElementById('navbarNavAltMarkup');
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
+navLinks.forEach( function(l) { l.addEventListener('click', function() {
+    // avoid flickering on desktop
+    if (menuToggle.classList.contains('show')) {
+      bsCollapse.toggle();
+    }
+  });
+});

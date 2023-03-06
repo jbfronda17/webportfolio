@@ -21,59 +21,45 @@
 
 		<title>Web Portfolio - John Bryan Fronda</title>
 
-		<!-- Jquery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(document).scroll(function () {
-				var $nav = $(".navbar");
-				var $navBrand = $(".navbar-brand");
-				var $navLinks = $(".nav-link");
-				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-				$navBrand.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-				$navLinks.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-			});
-		</script>
 	</head>
 	<body>
 		<div class="main_container">
 			<div id="particles-js"></div>
 
+			<!-- Navbar start -->
+			<nav class="navbar fixed-top navbar-expand-lg p-0">
+				<div id="navbar_container" class="container col-11 col-lg-9 p-0">
+					<a class="navbar-brand p-2 p-md-3 p-lg-0 m-0" href="index.html"><img src="./images/Logo.png" height="36"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div id="nav-links" class="navbar-nav ms-auto">
+							<div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+								<a href="#" class="nav-link home active" aria-current="page">Home</a>
+							</div>
+							<div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
+								<a href="#about" class="nav-link about">About</a>
+							</div>
+							<div data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
+								<a href="#skills" class="nav-link skills">Skills</a>
+							</div>
+							<div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">
+								<a href="#projects" class="nav-link projects">Projects</a>
+							</div>
+							<div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
+								<a href="#contact" class="nav-link contact">Contact</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar end -->
+
 			<!-- Home start -->
 			<section id="home">
 				<div id="home_container" class="container-fluid section_container dark p-0">
 					<h1 id="home_header" class="section_header m-0">Home</h1>
-
-					<!-- Navbar start -->
-					<nav class="navbar fixed-top navbar-expand-lg p-0">
-						<div id="navbar_container" class="container col-11 col-lg-9 p-0">
-							<a class="navbar-brand p-0 m-0" href="index.html"><img src="./images/Logo.png" height="36"></a>
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-								<div id="nav-links" class="navbar-nav ms-auto">
-									<div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
-										<a href="#" class="nav-link home active" aria-current="page">Home</a>
-									</div>
-									<div data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
-										<a href="#about" class="nav-link about">About</a>
-									</div>
-									<div data-aos="fade-down" data-aos-delay="600" data-aos-duration="1000">
-										<a href="#skills" class="nav-link skills">Skills</a>
-									</div>
-									<div data-aos="fade-down" data-aos-delay="800" data-aos-duration="1000">
-										<a href="#projects" class="nav-link projects">Projects</a>
-									</div>
-									<div data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000">
-										<a href="#contact" class="nav-link contact">Contact</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</nav>
-					<!-- Navbar end -->
-
-					<!-- Introduction start -->
 					<div id="introduction_container" class="container section_content d-flex align-items-center justify-content-center col-lg-9 p-0">
 						<div id="introduction_content" class="row d-flex flex-column flex-lg-row col-12">
 							<div data-aos="fade-down" data-aos-duration="2000" class="left col-lg-6 d-flex flex-column justify-content-center p-0">
@@ -86,8 +72,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- Introduction end -->
-
 				</div>
 			</section>
 			<!-- Home end -->
