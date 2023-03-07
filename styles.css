@@ -26,7 +26,7 @@ body {
   background: #212529;
 }
 
-#introduction_heading {
+#introduction-heading {
 	font-weight: 800;
 }
 
@@ -34,7 +34,7 @@ body {
 	color: #fe5b02;
 }
 
-#profileImage {
+#profile-image {
 	border: 15px solid white;
 }
 
@@ -82,25 +82,25 @@ body {
   opacity: 1;
 }
 
-.section_container {
+.section-container {
 	min-height: 100vh;
 }
 
-.section_container.dark {
+.section-container.dark {
 	background-color: #212529;
 	color: white;
 }
 
-.section_header {
+.section-header {
 	color: transparent;
 	height: 8vh;
 }
 
-.section_content {
+.section-content {
 	min-height: 92vh;
 }
 
-.section_heading, .card-title {
+.section-heading, .card-title {
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -141,7 +141,7 @@ body {
   transform: translateY(-6px);
 }
 
-#contact_content {
+#contact-content {
   height: 82vh;
 }
 
@@ -180,19 +180,19 @@ body {
     text-align: center;
   }
 
-  .section_content, #contact_content {
+  .section-content, #contact-content {
     height: auto;
   }
 
-  #skills_section_content.section_content {
+  #skills-section-content.section-content {
     height: 92vh;
   }
 
-  #contact_content {
+  #contact-content {
     min-height: 82vh;
   }
 
-  #introduction_heading {
+  #introduction-heading {
     font-size: 2.5rem;
   }
 
@@ -207,11 +207,11 @@ body {
     transform: none;
   }
 
-  #profileImage, #aboutImage1, .footer-content {
+  #profile-image, #about-image-1, .footer-content {
     display: none;
   }
 
-  #aboutImage2 {
+  #about-image-2 {
     display: initial;
     border: 15px solid #f7963b;
   }
@@ -220,7 +220,7 @@ body {
     margin-bottom: 3rem;
   }
 
-  #projects_heading, #contact_heading {
+  #projects-heading, #contact-heading {
     margin-top: 3rem;
   }
 
@@ -230,7 +230,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  #aboutImage2, .socials, #introduction-button.btn {
+  #about-image-2, .socials, #introduction-button.btn {
     display: none;
   }
 }
